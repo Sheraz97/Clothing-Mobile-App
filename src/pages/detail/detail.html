@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title>Detail</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngIf="item">
+    <img src="{{item.image}}" />
+    <ion-card-content>
+      <ion-card-title>
+        Title
+      </ion-card-title>
+      <p>
+        Description
+      </p>
+    </ion-card-content>
+    <ion-row no-padding>
+        <ion-col>
+          <button ion-button clear small color="primary" icon-start>
+            <ion-icon name='star'></ion-icon>
+            Favorite
+          </button>
+        </ion-col>
+        <ion-col text-right>
+          <button ion-button clear small color="primary" icon-start>
+            <ion-icon name="pricetag"></ion-icon>
+            {{2000 | currency:'USD':true}}
+          </button>
+        </ion-col>
+      </ion-row>
+  </ion-card>
+</ion-content>

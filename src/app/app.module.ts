@@ -7,8 +7,9 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
-import { CarsPageModule } from '../pages/cars/cars.module';
-import { BikesPageModule } from '../pages/bikes/bikes.module';
+import { LoginPageModule } from '../pages/login/login.module';
+import { RegisterPageModule } from '../pages/register/register.module';
+import { DetailPageModule } from '../pages/detail/detail.module';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -23,8 +24,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    CarsPageModule,
-    BikesPageModule,
+    LoginPageModule,
+    RegisterPageModule,
+    DetailPageModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],

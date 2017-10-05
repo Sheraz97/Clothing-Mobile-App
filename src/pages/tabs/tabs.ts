@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 
 import { AboutPage } from '../about/about';
-import { CarsPage } from '../cars/cars';
-import { BikesPage } from '../bikes/bikes';
 import { HomePage } from '../home/home';
 import { MenuController } from 'ionic-angular'
 
@@ -12,8 +10,8 @@ import { MenuController } from 'ionic-angular'
 export class TabsPage {
 
   tab1Root = HomePage;
-  tab2Root = CarsPage;
-  tab3Root = BikesPage;
+  tab2Root = HomePage;
+  tab3Root = HomePage;
   tab4Root = AboutPage;
 
   constructor(
